@@ -1,0 +1,151 @@
+.face
+{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(242, 126, 145);
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-left: 30%;
+    position: relative;
+}
+.leye
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:black;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.reye
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    margin-left: 160px;
+    margin-top: 50px;
+}
+.lpupil
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:white;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+.rpupil
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:white;
+    margin-left: 15px;
+    margin-top: 15px;
+
+}
+.nose
+{
+    height: 40px;
+    width: 60px;
+    border-radius: 30%;
+    position: absolute;
+    background-color:white;
+    margin-left: 100px;
+    margin-top: 120px;
+
+}
+.rnose
+{
+    height: 25px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:black;     
+    margin-left: 39px;
+    margin-top: 5px;
+
+}
+.lnose
+{
+    height: 25px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:black;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+.lears
+{
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:rgb(242, 126, 145);
+    margin-left: 10px;
+    margin-top: px;
+
+}
+.rears
+{
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+    position: absolute;
+    background-color:rgb(242, 126, 145);
+    margin-left: 180px;
+    margin-top: px;
+
+}
+.mouth
+{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: RGB(223,188,150);
+    margin-top:170px;
+    margin-left:calc(50% - 70px);
+}
+.stomach
+{
+    position: absolute;
+    height: 200px;
+    width: 350px;
+    border-radius: 20%;
+    background-color:rgb(242, 126, 145);
+    margin-top:150px;
+    margin-left:-300px;
+}
+.Neck
+{
+    position: absolute;
+    height: 60px;
+    width: 350px;
+    border-radius: 20%;
+    background-color:rgb(242, 126, 145);
+    margin-top:220px;
+    margin-left:-200px;
+}
+.box
+{
+    position: absolute;
+    height: 40px;
+    width: 200px;
+    border-radius: 20%;
+    background-color:rgb(191, 175, 178);
+    margin-top:220px;
+    margin-left:-400px;
+}
+
+
+
+
