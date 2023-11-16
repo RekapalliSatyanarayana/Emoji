@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h2
+        {
+            background-color: aliceblue;
+            text-align: center;
+            color: rgb(234, 96, 96);
+        }
+        body
+        {
+            text-align: center;
+            background-color:burlywood;
+        }
+        table
+        {
+            text-align: center;
+            background-color:black;
+            background-image: linear-gradient(violet,indigo,blue,green,yellow,orange,red);
+        }
+        button:hover
+        {
+            background-color:aquamarine
+        }
+        td
+        {
+            border-radius: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h2>CALCULATOR</h2>
+    <div class="Calculator"></div>
+    <input type="text" id="result" readonly>
+    <center>
+    <table>
+        <tr>
+            <td><button onclick="append(7)">7</button></td>
+            <td><button onclick="append(8)">8</button></td>
+            <td><button onclick="append(9)">9</button></td>
+            <td><button onclick="operation('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(4)">4</button></td>
+            <td><button onclick="append(5)">5</button></td>
+            <td><button onclick="append(6)">6</button></td>
+            <td><button onclick="operation('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(3)">3</button></td>
+            <td><button onclick="append(2)">2</button></td>
+            <td><button onclick="append(1)">1</button></td>
+            <td><button onclick="operation('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(0)">0</button></td>
+            <td><button onclick="clearresult('c')">C</button></td>
+            <td><button onclick="Calculate('=')">=</button></td>
+            <td><button onclick="operation('/')">/</button></td>
+        </tr>
+    </table>
+    </center>
+    <script>
+        let operator="";
+        let firstNumber="";
+        let secondNumber="";
+        function append(number)
+        {
+            if(operator==="")
+            {
+                firstNumber+=number;
+                document.getElementById('result').value=firstNumber;
+            }
+            else
+            {
+                secondNumber+=number;
+                document.getElementById('result').value=secondNumber;
+            }
+        }
+        function operation(op)
+        {
+            operator=op;
+        }
+        function Calculate()
+        {
+            let result;
+            switch(operator)
+            {
+                case '+':
+                    result=parseInt(firstNumber)+parseInt(secondNumber);
+                    break;
+                case '-':
+                    result=parseInt(firstNumber)-parseInt(secondNumber);
+                    break;
+                case '*':
+                    result=parseInt(firstNumber)*parseInt(secondNumber);
+                    break;
+                case '/':
+                    result=parseInt(firstNumber)/parseInt(secondNumber);
+                    break;
+            }
+            document.getElementById('result').value=result;
+        }
+        function clearresult()
+        {
+            operator="";
+            firstNumber="";
+            secondNumber="";
+            document.getElementById('result').value="";
+        }
+    </script>
+</body>
+</html>
